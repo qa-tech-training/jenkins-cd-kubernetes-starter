@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Run Tests') {
             steps {
-               sh '~/.nvm/nvm.sh'
+               // sh '~/.nvm/nvm.sh'
                npm 'install'
                npm 'test'
             }
