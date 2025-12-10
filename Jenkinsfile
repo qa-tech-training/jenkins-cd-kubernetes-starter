@@ -36,6 +36,7 @@ pipeline {
         stage('Clean Up') {
             steps {
                 sh "docker image prune --all --force --filter 'until=48h'"
+                cleanWs()
             }
         }
     }
